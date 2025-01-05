@@ -10,7 +10,7 @@ wn.tracer(0)
 
 # Paddle
 paddle = turtle.Turtle()
-paddle.speed(0)
+paddle.speed(1000)
 paddle.shape("square")
 paddle.color("white")
 paddle.shapesize(stretch_wid=1, stretch_len=5)
@@ -19,13 +19,14 @@ paddle.goto(0, -250)
 
 # Ball
 ball = turtle.Turtle()
-ball.speed(0)
+ball.speed(5000)
 ball.shape("circle")
 ball.color("white")
 ball.penup()
 ball.goto(0, -200)
-ball_dx = 0.2
-ball_dy = 0.2
+ball_dx = 3.0
+ball_dy = 3.0
+
 
 # Create bricks
 bricks = []
@@ -42,7 +43,7 @@ for i in range(-200, 200, 40):
 
 # Pen
 pen = turtle.Turtle()
-pen.speed(0)
+pen.speed(1000)
 pen.color("white")
 pen.penup()
 pen.hideturtle()
